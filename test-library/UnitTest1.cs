@@ -1,17 +1,15 @@
-
 //UnitTest.cs
 
-using System;
+using Library;
 using Xunit;
 
-namespace test_library
+namespace TestApp
 {
-    public class UnitTest1
+    public class LibraryTests
     {
         [Fact]
-        public void Test1()
-        {
-
+        public void TestThing() {
+            Assert.Equal(42, new Thing().Get(19, 23));
         }
     }
 }
